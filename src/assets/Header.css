@@ -1,0 +1,66 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #ff6600, #ffcc00); 
+  color: white;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.foodzy {
+  position: relative;
+  left: 20px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white; 
+  font-weight: bold;
+}
+
+.head-right {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  right: 5%;
+}
+
+/* Styling for login-button to look like normal text */
+.login-button {
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  text-decoration: none; /* Remove default text decoration if any */
+  font-size: 30px; /* Match font size with header a */
+  color: white; /* Match color with header a */
+  font-weight: bold; /* Match font weight with header a */
+  cursor: pointer; /* Change cursor to pointer for clickable behavior */
+  padding: 0; /* Remove default padding */
+}
+
+@media (max-width: 8px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .head-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header a {
+    font-size: 1em;
+  }
+
+  .login-button {
+    font-size: 1em; /* Ensure consistency with header a font size in mobile view */
+  }
+}
